@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>SMEK Industries</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="This is a working prototype of the website that will be hosted">
+<meta name="keywords" content="Sputnik, Trinity, sputnik, trinity, blender, web, dev">
+<meta name="author” content=“Sputnik">
+<meta name:="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/*this is the font for our logo*/
+.logo h1 {
+  font-family: "Courier New", Courier;
+  font-size: 50px;
+  margin-bottom: 0px;
+  color: #111;
+}
+.logo div {
+   height: 70px;
+   width: 100%;
+}
+a.logo {
+  text-decoration: none;
+}
+/*This changes the normal links*/
+a:link {
+  color: #333333
+}
+a:visited {
+  color: #555555
+}
+a:hover {
+  color: #010101
+}
+a:active {
+  color: #777777
+}
+/*this is the header style area and should be commented better*/
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+li {
+    float: left;
+}
+
+.dropdowncontent a, a.drophover, .nondropdown a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .drophover, li a.nondropdown:hover {
+    background-color: #222;
+}
+
+li.dropdown, li.nondropdown {
+    display: inline-block;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+}
+
+.dropdowncontent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdowncontent a:hover {
+  background-color: #333;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+}
+
+.dropdown:hover .dropdowncontent, .nondropdown:hover {
+    display: block;
+}
+a#activepage {
+  background-color: #333;
+}
+/*this styles the footer*/
+div.footborder {
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+}
+</style>
+
+</head>
+<div>
+<body>
+<a href="index.html" class="logo"><div><h1 id=home>SMEK Industries</h1></div></a>
+<h3><em>We provide "Technical Support"</em></h3>
+
+<nav>
+<!--Nav topbar goes here, the a that is active has an id of activepage, css will take care of the rest-->
+<ul class="navbar">
+  <li class="nondropdown"><a href="index.html">Home</a></li>
+  <li class="nondropdown"><a href="services.html">Services</a></li>
+  <li class="dropdown">
+    <a href="sputnik.html" class="drophover">Sputnik</a>
+    <div class="dropdowncontent">
+      <a href="3dcg.html">3D CG Portfolio</a>
+      <a href="spcoding.html">Coding</a>
+      <a href="websites.html">Websites</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="trinity.html" class="drophover">Trinity</a>
+    <div class="dropdowncontent">
+      <a href="trcoding">Coding</a>
+    </div>
+  </li>
+  <li class="nondropdown"><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div>
+<!--Content goes Here-->
+</div>
+<!--this is the footer-->
+<div class="footborder">
+  <h3>Smek Industries</h3>
+  <p>Contact at: null@null.com</p>
+</div>
+</body>
+</html>
